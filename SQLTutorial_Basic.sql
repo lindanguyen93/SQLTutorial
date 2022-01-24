@@ -1,4 +1,4 @@
---Table 1 Query
+--CREATE TABLE AND INSERT INTO : 
 
 Create Table EmployeeDemographics
 (EmployeeID int ,
@@ -9,14 +9,6 @@ Gender varchar (50),
 Nationality varchar (50)
 )
 
-
---Table 2 Query
-Create Table EmployeeSalary
-(EmployeeID int,
-JobTitle varchar (50),
-Salary int )
-
---Table 1 Insert: 
 Insert into EmployeeDemographics values
 (101, 'Anna','Smith', 27, 'Female', 'Australian'),
 (102, 'Angie', 'Martin', 29, 'Female', 'Australian'),
@@ -27,7 +19,10 @@ Insert into EmployeeDemographics values
 (107, 'Lily', 'June',28 ,'Female', 'Australian')
 
 
---Table 2 Insert: 
+Create Table EmployeeSalary
+(EmployeeID int,
+JobTitle varchar (50),
+Salary int )
 
 Insert into EmployeeSalary values
 (101, 'Salesman', 41000),
@@ -58,6 +53,8 @@ From EmployeeSalary
 Select *
 From SQLTutorial.dbo.EmployeeSalary
 
+
+
 --WHERE STATEMENT: =, <> does not equal, <, >, and, or, like, null, not null, in = equal in multiple things
 
 Select *
@@ -80,8 +77,4 @@ Select *
 From EmployeeDemographics
 Where Age >25
 Order By 4 desc, 5 Desc
-
-
-
-
 
